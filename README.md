@@ -9,12 +9,6 @@
 
 * Home screen with search bar and the to-do list:
 
-![alt text] (https://github.com/Diederia/Diederick-Calkoen-pset5/blob/master/Docs/Screen%20Shot%202016-11-25%20at%2022.03.26.png)
-
-![alt text] (https://github.com/Diederia/Diederick-Calkoen-pset5/blob/master/Docs/Screen%20Shot%202016-12-02%20at%2023.06.04.png)
-
-![alt text] (https://github.com/Diederia/Diederick-Calkoen-pset5/blob/master/Docs/Screen%20Shot%202016-12-02%20at%2023.06.18.png)
-
 ![alt text] (https://github.com/Diederia/Diederick-Calkoen-pset5/blob/master/Docs/Screen%20Shot%202016-12-02%20at%2023.07.32.png)
 
 ![alt text] (https://github.com/Diederia/Diederick-Calkoen-pset5/blob/master/Docs/Screen%20Shot%202016-12-02%20at%2023.07.43.png)
