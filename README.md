@@ -7,7 +7,7 @@
 
 * In this app the user could add many to-do lists. If the user clicks on a specific list details of the to-do list is showed.
 
-* Home screen with search bar and the to-do list:
+* Home screen in landscape modus:
 
 ![alt text] (https://github.com/Diederia/Diederick-Calkoen-pset5/blob/master/Docs/Screen%20Shot%202016-12-02%20at%2023.07.32.png)
 
