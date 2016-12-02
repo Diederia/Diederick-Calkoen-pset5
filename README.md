@@ -3,7 +3,7 @@
 
 * Diederick Calkoen 
   10684883 
-  25-11-2016
+  02-12-2016
 
 * In this app the user could add many to-do lists. If the user clicks on a specific list details of the to-do list is showed.
 
