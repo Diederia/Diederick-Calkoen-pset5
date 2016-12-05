@@ -101,6 +101,18 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! CustomCell
+        let db = DatabaseHelper()
+        var status = Bool()
+        do {
+            status = try db!.getStatus(toDoName: globalArrays.detailArray[indexPath.row])
+        } catch {
+            print(error)
+        }
+        if status == false {
+            cell.accessoryType = UITableViewCellAccessoryType.checkmark
+        } else {
+            cell.accessoryType = UITableViewCellAccessoryType.none
+        }
         
         cell.detialToDoLabel.text = (globalArrays.detailArray[indexPath.row])
         return cell
@@ -118,8 +130,6 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
             status = try db!.getStatus(toDoName: globalArrays.detailArray[indexPath.row])
             print(status)
             loadToDo(id: idCurrentList)
-
-            
         } catch {
             print(error)
         }
@@ -130,7 +140,6 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
             cell?.accessoryType = UITableViewCellAccessoryType.none
         }
         tableView.reloadData()
-        
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
