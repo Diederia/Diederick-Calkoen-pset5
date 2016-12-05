@@ -125,10 +125,8 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
         var status = Bool()
         do {
             status = try db!.getStatus(toDoName: globalArrays.detailArray[indexPath.row])
-            print(status)
             try db!.changeBool(item: globalArrays.detailArray[indexPath.row], value: !status)
             status = try db!.getStatus(toDoName: globalArrays.detailArray[indexPath.row])
-            print(status)
             loadToDo(id: idCurrentList)
         } catch {
             print(error)

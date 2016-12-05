@@ -109,16 +109,13 @@ class DatabaseHelper {
         
         do {
             for item in try db!.prepare(detailTable) {
-                print("test1")
                 if item[listId] == idList {
-                    print("test2")
                     result.append(item[toDo]!)
                 }
             }
         } catch {
             throw error
         }
-        print("test3")
         return result
     }
     
